@@ -48,6 +48,12 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/portofolio', (req, res) => {
+    res.render('projects.hbs', {
+        pageTitle: 'Portofolio'
+    });
+});
+
 app.get('/bad', (req, res) => {
     res.send({
         errorMessage: 'Shit happened'
